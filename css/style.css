@@ -19,7 +19,7 @@ body {
 
 .section__logo{
   /* background-color: salmon; */
-  width: 15%;
+  width: 5%;
   display: flex;
   justify-content: center;
 }
@@ -159,7 +159,6 @@ body {
   width: 90%;
   background-color: #fff;
   color: var(--color-alura);
-  padding: 12px 10px;
   border: 1px solid;
   margin-top: 25px;
 }
