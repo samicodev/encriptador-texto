@@ -9,12 +9,15 @@
   margin: 0;
 }
 
-body {
+body{
   background-color: #F3F5FC;
   box-sizing: border-box;
+  font-family: var(--fuente-serif);
+}
+
+main {
   display: flex;
   margin: 2% 2%;
-  font-family: var(--fuente-serif);
 }
 
 .section__logo{
@@ -102,7 +105,7 @@ body {
   border: 1px solid;
 }
 
-/* ============= SECTION RESULTADO SALIDA DE TEXTO============= */
+/* ============= SECTION RESULTADO SALIDA DE TEXTO ============= */
 .section__resultado{
   /* background-color: mediumseagreen ; */
   width: 30%;
@@ -174,9 +177,31 @@ body {
   position: absolute;
 }
 
+/* ============= PIE DE PAGINA ============= */
+.footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-alura);
+}
+
+.footer__informacion {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--fuente-serif);
+  text-align: center;
+}
+
+.footer__informacion--linkedin{
+  text-decoration: none;
+  color: #fff;
+}
+
 /* ============= Media query para diseño responsive ============= */
 @media (max-width: 770px) {
-  body {
+  main {
     margin: 5% 10%;
     flex-direction: column;
   }
