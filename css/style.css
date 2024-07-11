@@ -181,7 +181,7 @@ main {
 .footer {
   height: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--color-alura);
 }
@@ -194,9 +194,9 @@ main {
   text-align: center;
 }
 
-.footer__informacion--linkedin{
-  text-decoration: none;
+.footer__social--link{
   color: #fff;
+  padding: 5px;
 }
 
 /* ============= Media query para diseño responsive ============= */
@@ -233,6 +233,12 @@ main {
   }
   
 
+}
+
+@media (max-width: 490px) {
+  .footer{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 380px) {
