@@ -1,13 +1,13 @@
 /* Variables para elementos de la section entrada */
-let textoEntrada = document.getElementById('textoEntrada');
-let textoResultado = document.getElementById('textoResultado');
+const textoEntrada = document.getElementById('textoEntrada');
+const textoResultado = document.getElementById('textoResultado');
 
 /* Variables para elementos de la section resultado */
-let mensajeCopiado = document.getElementById('mensajeCopiado');
+const mensajeCopiado = document.getElementById('mensajeCopiado');
 
-let botonCopiar = document.getElementById('botonCopiar');
-let resultadoInformacion = document.getElementById('resultadoInformacion');
-let resultadoMunieco = document.getElementById('resultadoMunieco');
+const botonCopiar = document.getElementById('botonCopiar');
+const resultadoInformacion = document.getElementById('resultadoInformacion');
+const resultadoMunieco = document.getElementById('resultadoMunieco');
 
 
 /* Funcion para encriptar el texto */
@@ -39,16 +39,16 @@ function validarTexto() {
 
 /* Funcion para copiar el texto encriptado */
 function copiarTexto() {
-if(textoResultado.value !== ""){
-  navigator.clipboard.writeText(textoResultado.value)
- mensajeCopiado.style.display = 'block';
+  if(textoResultado.value !== ""){
+    navigator.clipboard.writeText(textoResultado.value)
+  mensajeCopiado.style.display = 'block';
 
-  setTimeout(function() {
-    mensajeCopiado.style.display = 'none';
-  }, 1000);
-}else{
-  alert('El campo esta vacio, no hay texto que copiar.')
-}
+    setTimeout(function() {
+      mensajeCopiado.style.display = 'none';
+    }, 1000);
+  }else{
+    alert('El campo esta vacio, no hay texto que copiar.')
+  }
 
 }
 
